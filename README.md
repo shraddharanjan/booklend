@@ -1,4 +1,4 @@
-# 📚 RanjanBooks
+# 📚 BookLend
 
 A modern book-sharing and lending marketplace built with Next.js.
 
@@ -6,7 +6,7 @@ Users can browse books by category, view detailed listings, save favourites, add
 
 ## 🌐 Live Demo
 
-Open the live RanjanBooks app: https://ranjanbooks-lemon.vercel.app/
+Open the live BookLend website: https://booklend-lemon.vercel.app/
 
 ## ✨ Features
 
@@ -37,107 +37,6 @@ Open the live RanjanBooks app: https://ranjanbooks-lemon.vercel.app/
 - 📆 date-fns
 - 🎭 React Icons
 - 🔔 React Hot Toast
-
-## 🚀 Getting Started
-
-### ✅ Prerequisites
-
-Install the following before running the project:
-
-- Node.js 18 or newer
-- npm
-- Git
-- A MongoDB Atlas database
-- A Cloudinary account
-- Authentication-provider credentials, when required
-
-### 📥 Clone the Repository
-
-```bash
-git clone git@github.com:shraddharanjan/ranjanbooks.git
-cd ranjanbooks
-```
-
-### 📦 Install Dependencies
-
-```bash
-npm install
-```
-
-The project includes a `postinstall` script that generates the Prisma Client automatically.
-
-### 🔐 Configure Environment Variables
-
-Create a `.env` file in the project root:
-
-```env
-DATABASE_URL="mongodb+srv://USERNAME:PASSWORD@YOUR_CLUSTER.mongodb.net/ranjanbooks?retryWrites=true&w=majority"
-
-NEXTAUTH_URL="http://localhost:3000"
-NEXTAUTH_SECRET="replace-with-a-secure-random-secret"
-```
-
-Add any additional variables required by the authentication providers and Cloudinary configuration used by the project.
-
-Generate a secure NextAuth secret with:
-
-```bash
-openssl rand -base64 32
-```
-
-> ⚠️ Never commit `.env` files or real credentials to Git.
-
-### 🧩 Generate the Prisma Client
-
-```bash
-npx prisma generate
-```
-
-To verify the database connection:
-
-```bash
-npx prisma db pull
-```
-
-### 💻 Start the Development Server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## 📜 Available Scripts
-
-### Start development mode
-
-```bash
-npm run dev
-```
-
-### Create a production build
-
-```bash
-npm run build
-```
-
-### Run the production build
-
-```bash
-npm run start
-```
-
-### Run lint checks
-
-```bash
-npm run lint
-```
-
-### Generate Prisma Client
-
-```bash
-npm run postinstall
-```
 
 ## 🗂️ Project Structure
 
